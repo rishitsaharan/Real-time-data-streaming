@@ -100,7 +100,6 @@ def connect_to_kafka(spark_conn):
 
 def create_cassandra_connection():
     try:
-        # connecting to the cassandra cluster
         cluster = Cluster(['localhost'])
 
         cas_session = cluster.connect()
